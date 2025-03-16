@@ -1,0 +1,10 @@
+[template]
+ignore = [
+  "assets/.gitkeep",
+  "include/.gitkeep",
+  "assets/.gitkeep",
+  "third-party/.gitkeep",
+]
+
+[hooks]
+post = ["post.rhai"]
