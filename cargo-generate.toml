@@ -3,7 +3,7 @@ ignore = [
   "assets/.gitkeep",
   "include/.gitkeep",
   "assets/.gitkeep",
-  "third-party/.gitkeep",
+  "vendor/.gitkeep",
 ]
 
 [hooks]

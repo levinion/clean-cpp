@@ -13,11 +13,11 @@ file(GLOB_RECURSE SRC src/*.cpp)
 {% if crate_type == "bin" %}add_executable(${name} ${SRC}){% endif %}{% if crate_type == "lib" %}add_library(${name} ${SRC}){% endif %}
 
 # link std library staticly
-# target_link_options(${name} PRIVATE -static-libgcc -static-libstdc++)
+target_link_options(${name} PRIVATE -static-libgcc -static-libstdc++)
 
 # include header
 target_include_directories(${name} PUBLIC include/)
 
 # add third party dependencies here
-# add_subdirectory(./third-party/hierro2d-cpp)
+# add_subdirectory(./vendor/hierro2d-cpp)
 # target_link_libraries(${name} PUBLIC hierro)
