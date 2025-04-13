@@ -1,9 +1,7 @@
-name := `cat build/CMakeCache.txt | grep CMAKE_PROJECT_NAME | awk -F '=' '{print $2}'` 
-
 run:
   just init
   just build
-  ./build/{{name}}
+  ./build/$(cat build/CMakeCache.txt | grep CMAKE_PROJECT_NAME | awk -F '=' '{print $2}')
 
 init:
   cmake -B build
