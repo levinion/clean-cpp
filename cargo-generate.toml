@@ -4,6 +4,7 @@ ignore = [
   "include/.gitkeep",
   "assets/.gitkeep",
   "vendor/.gitkeep",
+  "examples/.gitkeep",
 ]
 
 [hooks]

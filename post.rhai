@@ -1,7 +1,7 @@
 let project_name = variable::get("project-name");
 let crate_type = variable::get("crate_type");
 
-file::rename("include/lib/lib.h", `include/lib/${project_name}.h`);
+file::rename("include/lib/lib.h", `include/lib/${project_name}.hpp`);
 file::rename("include/lib", `include/${project_name}`);
 file::write("README.md", "");
 
