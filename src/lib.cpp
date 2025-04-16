@@ -1,3 +1,3 @@
-#include "{{project-name}}/{{project-name}}.h"
+#include "{{project-name}}/{{project-name}}.hpp"
 
-void hello(){}
+void hello() {}
