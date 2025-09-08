@@ -13,7 +13,7 @@ clean:
 debug:
 	make BUILD_TYPE=Debug
 
-run: build:
+run: build
 	./build/$(PROJECT_NAME)
 
 .PHONY: init build clean debug run
