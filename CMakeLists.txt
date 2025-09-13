@@ -20,7 +20,6 @@ set(CMAKE_CXX_STANDARD 26)
 file(GLOB_RECURSE SRC src/*.cpp)
 {% if crate_type == "bin" %}add_executable(${NAME} ${SRC}){% endif %}{% if crate_type == "lib" %}add_library(${NAME} ${SRC}){% endif %}
 
-
 # Headers
 # -----------------------------------------------------------------------------
 target_include_directories(${NAME} PUBLIC include/)
